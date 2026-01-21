@@ -74,12 +74,19 @@ console.log("");
 
 // Câu 9
 console.log("Câu 9:")
-for (const product in products[2]) {
-    console.log(`${product}: ${products[2][product]}`)
+for (const product in products) {
+    console.log(`
+        ID: ${products[product].id}
+        Name: ${products[product].name}
+        Price: ${products[product].price}
+        Quantity: ${products[product].quantity}
+        Category: ${products[product].category}
+        IsAvailable: ${products[product].isAvailable}
+    `)
 }
-console.log("");
 
 // Câu 10
+console.log("");
 console.log("Câu 10:")
 const getProductAvailable = products
     .filter(
